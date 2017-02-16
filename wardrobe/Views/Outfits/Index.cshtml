@@ -4,11 +4,26 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Outfits</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
+<div class="row">
+    <!--Takes each review and puts it in a thumbnail, 3 thumbnails across medium pages-->
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <p>@Html.ActionLink("Details", "Details", new { id = item.OutfitID }, new { @class = "btn btn-primary", role = "button" })</p>
+                    
+                </div>
+            </div>
+        </div>
+    }
+</div>
 <table class="table">
     <tr>
         <th>
