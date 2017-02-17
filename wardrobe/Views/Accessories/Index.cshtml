@@ -16,10 +16,25 @@
     {
         <div class="col-md-4">
             <div class="thumbnail">
-                <div class="caption">                 
-                    <p>@Html.ActionLink("Details", "Details", new { id = item.AccessoryID }, new { @class = "btn btn-primary", role = "button" })</p>                                       
+                <div class="caption">
+                    <p>@Html.ActionLink("Details", "Details", new { id = item.AccessoryID }, new { @class = "btn btn-primary", role = "button" })</p>
                     <h2>@Html.DisplayFor(modelItem => item.Name)</h2>
-                    <p><strong> Color: @Html.DisplayFor(modelItem => item.Color) </strong></p>                    
+                    <p><strong> Color: @Html.DisplayFor(modelItem => item.Color) </strong></p>
+
+                    <div class="CategoryPic">
+                        @if (item.Name == "belt")
+                        {
+                            <img src="~/Content/photos/belt.jpg" />
+                        }
+                        else if (item.Name == "winter hat")
+                        {
+                            <img src="~/Content/photos/winter hat.jpg" />
+                        }
+                        else if (item.Name == "work gloves")
+                        {
+                            <img src="~/Content/photos/work gloves.jpg" />
+                        }
+                    </div>
                 </div>
             </div>
         </div>
