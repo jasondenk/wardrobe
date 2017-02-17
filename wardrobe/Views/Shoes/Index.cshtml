@@ -20,6 +20,8 @@
                     <p>@Html.ActionLink("Details", "Details", new { id = item.ShoeID }, new { @class = "btn btn-primary", role = "button" })</p>
                     <h2>@Html.DisplayFor(modelItem => item.Name)</h2>
                     <p><strong> Color: @Html.DisplayFor(modelItem => item.Color) </strong></p>
+                    <img src="@Url.Content(item.Photo)" class="img-responsive" />
+                    
                 </div>
             </div>
         </div>
