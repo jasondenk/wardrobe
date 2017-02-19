@@ -1,6 +1,16 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    
+}
+
+title {
+    background-color:white;
+    
+}
+
+img {
+    max-height:200px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +31,11 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+
+.top {
+    background-color:lightblue;
+
+    
 }
