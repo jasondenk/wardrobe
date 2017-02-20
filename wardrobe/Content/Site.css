@@ -2,6 +2,7 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    /*better font*/
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -9,7 +10,7 @@ title {
     background-color:white;
     
 }
-
+/*max image height*/
 img {
     max-height:200px;
 }
@@ -38,10 +39,11 @@ textarea {
 .top {
     background-color:lightblue;    
 }
-
+/*white background*/
 .jumbotron { 
     background-color:white;
 }
+/*changes details buttons*/
 .btn-primary {    
     color:white !important;
     background-color:black !important;
