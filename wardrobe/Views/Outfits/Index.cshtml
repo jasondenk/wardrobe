@@ -18,13 +18,20 @@
             <div class="thumbnail">
                 <div class="caption">
                     <p>@Html.ActionLink("Details", "Details", new { id = item.OutfitID }, new { @class = "btn btn-primary", role = "button" })</p>
-                    
+                    @Html.DisplayFor(modelItem => item.Accessory.Name)
+                    <img src="@Url.Content(item.Accessory.Photo)" class="img-responsive" />
+                    @Html.DisplayFor(modelItem => item.Top.Name)
+                    <img src="@Url.Content(item.Top.Photo)" class="img-responsive" />
+                    @Html.DisplayFor(modelItem => item.Bottom.Name)
+                    <img src="@Url.Content(item.Bottom.Photo)" class="img-responsive" />
+                    @Html.DisplayFor(modelItem => item.Shoe.Name)
+                    <img src="@Url.Content(item.Shoe.Photo)" class="img-responsive" />
                 </div>
             </div>
         </div>
     }
 </div>
-<table class="table">
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Accessory.Name)
@@ -44,16 +51,21 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Accessory.Name)
+            @Html.DisplayFor(modelItem => item.Accessory.Name)            
+            <img src="@Url.Content(item.Accessory.Photo)" class="img-responsive" />
+            
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Bottom.Name)
+            <img src="@Url.Content(item.Bottom.Photo)" class="img-responsive" />
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Shoe.Name)
+            <img src="@Url.Content(item.Shoe.Photo)" class="img-responsive" />
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Top.Name)
+            <img src="@Url.Content(item.Top.Photo)" class="img-responsive" />
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.OutfitID }) |
@@ -63,4 +75,4 @@
     </tr>
 }
 
-</table>
+</table>*@

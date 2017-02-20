@@ -16,22 +16,7 @@
 
         <dd>
             @Html.DisplayFor(model => model.Accessory.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Bottom.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Bottom.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Shoe.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Shoe.Name)
+            <img src="@Url.Content(Model.Accessory.Photo)" class="img-responsive" />
         </dd>
 
         <dt>
@@ -40,8 +25,28 @@
 
         <dd>
             @Html.DisplayFor(model => model.Top.Name)
+            <img src="@Url.Content(Model.Top.Photo)" class="img-responsive" />
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.Bottom.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bottom.Name)
+            <img src="@Url.Content(Model.Bottom.Photo)" class="img-responsive" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Shoe.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shoe.Name)
+            <img src="@Url.Content(Model.Shoe.Photo)" class="img-responsive" />
+        </dd>
+
+        
     </dl>
 </div>
 <p>

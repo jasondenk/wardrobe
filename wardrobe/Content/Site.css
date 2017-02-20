@@ -1,7 +1,8 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
     padding-top: 50px;
     padding-bottom: 20px;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 title {
@@ -35,7 +36,14 @@ textarea {
 
 
 .top {
-    background-color:lightblue;
+    background-color:lightblue;    
+}
 
-    
+.jumbotron { 
+    background-color:white;
+}
+.btn-primary {    
+    color:white !important;
+    background-color:black !important;
+    border: 1px solid black !important;
 }
